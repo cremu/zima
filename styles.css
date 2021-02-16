@@ -1,0 +1,15 @@
+section.main {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100vw;
+    height: 100vh;
+}
+h2 {
+    font-family: 'Inter', sans-serif;
+}
