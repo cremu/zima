@@ -19,20 +19,22 @@ h1, h2, h3, p, a {
 }
 /* Styling */
 main {
-    display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
-    height: -webkit-fill-available;
     height: 100vh;
 
     overflow: hidden;
 
     margin: 0px 10px;
+}
+@supports (-webkit-fill-available) {
+    main {
+        height: -webkit-fill-available;
+    }
 }
 h1 {
     font-family: 'Neue Singular', sans-serif;
