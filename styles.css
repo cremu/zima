@@ -36,7 +36,7 @@ h1 {
     font-family: 'Neue Singular', sans-serif;
     font-size: 4rem;
     font-weight: bold;
-    letter-spacing: .055em;
+    letter-spacing: .025em;
 
     display: flex;
     flex-direction: column;
