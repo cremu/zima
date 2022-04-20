@@ -17,7 +17,7 @@ body {
     letter-spacing: .25em;
 
     min-height: 100vh;
-    /* mobile viewport bug fix */
+    /* mobile viewport on iOS */
     min-height: -webkit-fill-available;
 }
 h1, h2, h3, p, a {
@@ -32,7 +32,7 @@ main {
     justify-content: center;
     align-items: center;
 
-    height: 100vh;
+    height: 100%;
 
     overflow: hidden;
 
