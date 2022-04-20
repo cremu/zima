@@ -60,6 +60,7 @@ h1 span.subheading {
 }
 svg {
     max-width: 375px;
+    margin: 50px 0px;
 }
 h2 {
     font-size: 1rem;
