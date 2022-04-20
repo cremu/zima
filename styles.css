@@ -1,8 +1,24 @@
-body {
-    font-family: 'Inter', sans-serif;
-    margin: 0px;
+/* ZIMA Fonts */
+@font-face {
+    font-family: 'HK Grotesk';
+    src: url('public/fonts/HKGrotesk.woff2');
 }
-section.main {
+@font-face {
+    font-family: 'Neue Singular';
+    src: url('public/fonts/NeueSingular.woff2');
+}
+/* General */
+body {
+    font-family: 'HK Grotesk', sans-serif;
+    margin: 0px;
+    letter-spacing: .25em;
+}
+h1, h2, h3, p, a {
+    margin: 0px;
+    text-align: center;
+}
+/* Styling */
+main {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -11,18 +27,79 @@ section.main {
     justify-content: center;
     align-items: center;
 
-    width: 100vw;
     height: 100vh;
 
     overflow: hidden;
+
+    margin: 0px 10px;
 }
-a {
-    font-size: 1.2rem;
-    color: black;
-    text-decoration: none;
-    margin-top: 1.8rem;
+h1 {
+    font-family: 'Neue Singular', sans-serif;
+    font-size: 4rem;
+    font-weight: bold;
+    letter-spacing: .055em;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+h1 span.heading {
+    display: block;
+    margin-top: -.5em;
+}
+h1 span.subheading {
+    font-family: 'HK Grotesk', sans-serif;
+    font-size: 1rem;
+    font-weight: normal;
+    letter-spacing: .25em;
+
+    display: block;
+
+    margin-top: .5rem;
+}
+section.zima-branding {
+    width: 100%;
+    height: fit-content;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    margin: 50px 0px;
 }
 svg {
-    max-width: 500px;
-    margin: 0px 10px;
+    max-width: 375px;
+}
+h2 {
+    font-size: 1rem;
+}
+h3 {
+    font-size: 1rem;
+    margin-top: 1.8rem;
+}
+a {
+    font-size: 1rem;
+    color: inherit;
+
+    text-decoration: none;
+    text-transform: uppercase;
+
+    margin-top: .25em;
+}
+
+@media only screen and (max-width: 300px) {
+    main {
+        margin: 0px 5px;
+    }
+    h1 {
+        font-size: 2.75rem;
+    }
+    h1 span.subheading, h2, h3, a {
+        font-size: .75rem;
+    }
+    section.zima-branding {
+        margin: 35px 0px;
+    }
+
 }
