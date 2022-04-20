@@ -8,10 +8,17 @@
     src: url('public/fonts/NeueSingular.woff2');
 }
 /* General */
+html {
+    height: -webkit-fill-available;
+}
 body {
     font-family: 'HK Grotesk', sans-serif;
     margin: 0px;
     letter-spacing: .25em;
+
+    min-height: 100vh;
+    /* mobile viewport bug fix */
+    min-height: -webkit-fill-available;
 }
 h1, h2, h3, p, a {
     margin: 0px;
