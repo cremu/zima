@@ -31,11 +31,6 @@ main {
 
     margin: 0px 10px;
 }
-@supports (-webkit-fill-available) {
-    main {
-        height: -webkit-fill-available;
-    }
-}
 h1 {
     font-family: 'Neue Singular', sans-serif;
     font-size: 4rem;
